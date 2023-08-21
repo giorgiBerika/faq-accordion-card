@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 
+import {AppRight, AppLeft} from './app-parts/index';
+
 function App() {
 
   return (
-   <div>
-      Hello There!
+   <div className='app-component-wrapper'>
+      <AppLeft />
+      <AppRight />
    </div> 
   )
 }
