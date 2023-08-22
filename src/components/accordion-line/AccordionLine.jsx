@@ -9,7 +9,7 @@ const AccordionLine = ({activeLine, setActiveLine, ...props}) =>
     {
         if(activeLine === props.lineIndex)
         {
-            setActiveLine(0)
+            setActiveLine(0);
         }else
         {
 
@@ -17,7 +17,7 @@ const AccordionLine = ({activeLine, setActiveLine, ...props}) =>
         }
     }
     return (
-        <div className='accordion-line'
+        <div className={`accordion-line ${(activeLine === props.lineIndex) ?  'active-line' : ''}`}
              onClick={() => clickHandler()}
                 >
             <div className='accordion-line-question'>
@@ -29,7 +29,7 @@ const AccordionLine = ({activeLine, setActiveLine, ...props}) =>
             </div>
             {(activeLine === props.lineIndex) && 
             <p className='accordion-line-answer'>{props.accordionAnswer}</p>
-            }
+            }      
             </div>
     )
 }
