@@ -3,7 +3,7 @@ import './AccordionHeader.css'
 const AccordionHeader = () =>
 {
     return (
-        <div>Accordion header!</div>
+        <h1 className='accordion-header'>faq</h1>
     )
 }
 

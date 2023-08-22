@@ -1,0 +1,10 @@
+.accordion-header
+{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+
+    text-transform: uppercase;
+
+    color: var(--black-dark-color);
+}
