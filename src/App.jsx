@@ -6,10 +6,12 @@ import {AppRight, AppLeft} from './app-parts/index';
 function App() {
 
   return (
-   <div className='app-component-wrapper'>
-      <AppLeft />
-      <AppRight />
-   </div> 
+    <div className='app-container'>
+      <div className='app-component-wrapper'>
+        <AppLeft />
+        <AppRight />
+       </div> 
+   </div>
   )
 }
 
