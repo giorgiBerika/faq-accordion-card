@@ -10,7 +10,7 @@ const AppRight = () =>
     [
         {
             question: "How many team members can I invite?",
-            answer: "No more than 2GB. All files in your account must fit your allotted storage space."
+            answer: "You can invite at least five team members."
         },
         {
             question: "What is the maximum file upload size?",
@@ -18,15 +18,15 @@ const AppRight = () =>
         },
         {
             question: "How do I reset my password?",
-            answer: "No more than 2GB. All files in your account must fit your allotted storage space."
+            answer: "In order to change password, you need to click settings, then personal informatin and change password."
         },
         {
             question: "Can I cancel my subscription?",
-            answer: "No more than 2GB. All files in your account must fit your allotted storage space."
+            answer: "Of course, you can cancel subscription whenever you want."
         },
         {
             question: "Do you provide additional support?",
-            answer: "No more than 2GB. All files in your account must fit your allotted storage space."
+            answer: "Obviously, we do provide additional support!"
         },
     ]
     return (
