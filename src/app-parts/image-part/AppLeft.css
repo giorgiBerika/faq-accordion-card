@@ -1,0 +1,27 @@
+.app-left-part
+{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.app-left-part
+img
+{
+    position: absolute;
+}
+
+.app-left-part
+.platform-lines
+{
+    top: -20%;
+}
+
+.app-left-part
+.mail-box
+{
+    top: 50%;
+    right: 76%;
+    transform: translateY( -30%);
+    z-index: 1000;
+}
