@@ -21,9 +21,10 @@ const AccordionLine = ({activeLine, setActiveLine, ...props}) =>
              onClick={() => clickHandler()}
                 >
             <div className='accordion-line-question'>
-                <h2>{props.accordionQuestion}</h2>
+                <h2 className={`${(activeLine === props.lineIndex) ?  'active-line-question' : ''}`}
+                >{props.accordionQuestion}</h2>
                 <img
-                    className='accordion-line-arrow' 
+                    className={`accordion-line-arrow ${(activeLine === props.lineIndex) ?  'accordion-line-arrow-active' : ''}`} 
                     src={arrow} 
                     alt='Arrow icon'/> 
             </div>
