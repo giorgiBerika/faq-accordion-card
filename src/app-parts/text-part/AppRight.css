@@ -5,4 +5,5 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 45px;
+    height: 100%;
 }

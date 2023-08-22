@@ -2,12 +2,19 @@ import './AccordionLine.css'
 
 import arrow from '../../assets/arrow.png';
 
-const AccordionLine = ({lineClicked, setLineClicked, ...props}) =>
+const AccordionLine = ({activeLine, setActiveLine, ...props}) =>
 {
 
     const clickHandler = (e) =>
     {
-        setLineClicked(!lineClicked);
+        if(activeLine === props.lineIndex)
+        {
+            setActiveLine(0)
+        }else
+        {
+
+            setActiveLine(props.lineIndex);
+        }
     }
     return (
         <div className='accordion-line'
@@ -20,7 +27,7 @@ const AccordionLine = ({lineClicked, setLineClicked, ...props}) =>
                     src={arrow} 
                     alt='Arrow icon'/> 
             </div>
-            {lineClicked && 
+            {(activeLine === props.lineIndex) && 
             <p className='accordion-line-answer'>{props.accordionAnswer}</p>
             }
             </div>

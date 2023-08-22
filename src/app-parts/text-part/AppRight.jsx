@@ -5,7 +5,7 @@ import {AccordionHeader} from '../../components'
 import {AccordionLine} from '../../components'
 const AppRight = () =>
 {
-    const [lineClicked, setLineClicked] = useState(false);
+    const [activeLine, setActiveLine] = useState(0);
     const accordionLineArr = 
     [
         {
@@ -33,14 +33,18 @@ const AppRight = () =>
         <div className='app-right-part-wrapper'>
             <AccordionHeader />
             <div className='accordion-line-wrapper'>
-                {accordionLineArr.map((line) => {
+                {accordionLineArr.map((line, index) => {
                     return (
-                        <AccordionLine 
+                    <AccordionLine 
                     accordionQuestion={line.question}
                     accordionAnswer={line.answer}
-                    
-                    lineClicked={lineClicked}
-                    setLineClicked={setLineClicked}
+
+                    lineIndex={index + 1}
+                    key={index + 1}
+                        
+
+                    activeLine={activeLine}
+                    setActiveLine={setActiveLine}
                     />
                     )
                 })}
