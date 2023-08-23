@@ -25,3 +25,38 @@ img
     transform: translateY( -30%);
     z-index: 1000;
 }
+.app-left-part
+.single-platform
+{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .app-left-part
+    {
+        transform: translate(30%,-40%);
+        width: 250px;
+    }
+    .app-left-part
+    .platform-lines
+    {
+        display: none;
+    }
+    .app-left-part img:nth-child(3)
+    {
+        width: 237px;
+        height: 180px;
+    }
+    .app-left-part
+    .mail-box
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .app-left-part
+    .single-platform
+    {
+        display: flex;
+        top: 70%;
+        right: 11%;
+    }
+}

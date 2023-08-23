@@ -7,3 +7,10 @@
     gap: 45px;
     height: 100%;
 }
+@media screen and (max-width: 900px) {
+    .app-right-part-wrapper
+    {
+        align-items: center;
+        transform: translateX(15%);
+    }
+}
